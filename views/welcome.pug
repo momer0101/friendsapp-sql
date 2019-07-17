@@ -1,0 +1,21 @@
+doctype html
+html
+ 
+        p Hi there, #{user.email}!
+
+        p Have some users:
+
+        ul
+            for people in peoples
+                li= people.name
+                li= people.age
+                li= people.gender
+                form(action='/add' method='post')
+                  input(name='logid' value=user.userid hidden='') 
+                  button(name='usid' value=people.userid) add
+
+        p Have some friends:
+
+        ul
+            for f in friendships
+                li= f
