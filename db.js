@@ -11,8 +11,8 @@ var flash    = require('connect-flash');
 /*var transporter = nodemailer.createTransport({
   service: 'yahoo',
   auth: {
-    user: 'placeholder0101@yahoo.com',
-    pass: 'holdthatplace'
+    user: yourname,
+    pass: password
   }
 });
 */
